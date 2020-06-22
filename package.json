@@ -8,7 +8,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Govinda Mahajan",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
