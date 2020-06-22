@@ -3,6 +3,7 @@ const router = express.Router();
 const fileUpload = require('../controller/fileUpload');
 const multer = require('multer');
 const empController = require('../controller/employees');
+
 /* Setting file upload directory */
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -12,7 +13,9 @@ const storage = multer.diskStorage({
         cb(null, file.originalname);
     }
 });
-/* Restricting file formats */
+
+/* Restricting file formats : jpg/jpeg/png*/
+
 const fileFilter = (req, file, cb) => {
     if (file.mimetype === 'image/jpeg' || file.mimetype === 'image/png') {
         cb(null, true);
@@ -20,7 +23,8 @@ const fileFilter = (req, file, cb) => {
         cb(null, false);
     }
 };
-/* Setting upload strategy  */
+
+/* Setting upload strategy with 5MB max size  */
 const upload = multer({
     storage: storage,
     limits: {
