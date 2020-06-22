@@ -2,13 +2,9 @@
 
 Step 1 : 
 
-Create a web Application using KoaJS (Preferred) or ExpressJS 
+Create a web Application using ExpressJS 
 
 [ExpressJS](https://expressjs.com/)
-
-
-NOTE : Do not use any template / boilerplate.
-
 
 Step 2 : 
 
@@ -22,8 +18,6 @@ Create CRUD application with following models :
 
 NOTE : Use promises for User Model & Logic
 
- 
-
 2.  Employee Model with following functionality
 
 - CRUD
@@ -34,10 +28,9 @@ a) File Upload
 
 b) File Download
 
- 
+- NOTE : Use callback for Employee Model & Logic
 
-NOTE : Use callback for Employee Model & Logic
-             Inter-conversion between Promise & Callback is accepted
+- Inter-conversion between Promise & Callback is accepted
 
 
 Step 3 : 
